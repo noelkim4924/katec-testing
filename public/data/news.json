@@ -1,0 +1,37 @@
+[
+  {
+    "title": "KATEC 2024 Hackathon",
+    "date": "Jan 3, 2025",
+    "desc": "KATEC에서 해커톤 대회를 주최합니다.",
+    "author": "KATEC",
+    "img": "/images/news/Hackathon.png"
+  },
+  {
+    "title": "2024 제이킴님 세미나 진행",
+    "date": "Oct 5, 2024",
+    "desc": "밴쿠버 IT 커뮤니티에서 성공적으로 개최된 KATEC 세미나.",
+    "author": "KATEC",
+    "img": "/images/news/2.png"
+  },
+  {
+    "title": "2024 박기범님 세미나 진행",
+    "date": "Oct 5, 2024",
+    "desc": "밴쿠버 IT 커뮤니티에서 성공적으로 개최된 KATEC 세미나.",
+    "author": "KATEC",
+    "img": "/images/news/1.jpeg"
+  },
+  {
+    "title": "커뮤니티 네트워크 강화",
+    "date": "Nov 15, 2023",
+    "desc": "밴쿠버 IT 커뮤니티의 네트워크를 더욱 강화하고 있습니다.",
+    "author": "Community",
+    "img": "/images/news/noimage.png"
+  },
+  {
+    "title": "2024 기술 트렌드 발표",
+    "date": "Sep 20, 2023",
+    "desc": "KATEC 공식 웹사이트가 개설되어 더 많은 정보를 제공합니다.",
+    "author": "Admin",
+    "img": "/images/news/noimage.png"
+  }
+]
