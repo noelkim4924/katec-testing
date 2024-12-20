@@ -1,35 +1,19 @@
-import { Resend } from 'resend';
 import { NextResponse } from 'next/server';
-import { EmailTemplate } from '@/components/Email/email-template';
-
-const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(req: Request) {
   try {
-    const body = await req.json();
-    const { name, email, subject, message } = body;
+    // 이메일 전송 로직 비활성화
+    console.warn('Email sending is disabled in test mode.');
 
-    const data = await resend.emails.send({
-      from: 'Acme <onboarding@resend.dev>', 
-      to: ['dndyd4924@gmail.com'], 
-      subject: subject, 
-      react: EmailTemplate({ 
-        name,
-        email,
-        subject,
-        message,
-      }),
-    });
-
+    // 성공적으로 처리된 것처럼 응답
     return NextResponse.json({
-      message: "Email sent",
-      id: data.data?.id,
+      message: "Email sending is disabled in this environment.",
     });
   } catch (error) {
-    console.error('Error sending email:', error);
+    console.error('Unexpected error:', error);
     return NextResponse.json({
-      message: "Failed to send email",
-      error: error,
+      message: "An error occurred.",
+      error: error instanceof Error ? error.message : String(error),
     });
   }
 }
