@@ -1,11 +1,11 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+
 import { NextResponse } from 'next/server';
 
 export async function POST(req: Request) {
   try {
-    // 이메일 전송 로직 비활성화
     console.warn('Email sending is disabled in test mode.');
 
-    // 성공적으로 처리된 것처럼 응답
     return NextResponse.json({
       message: "Email sending is disabled in this environment.",
     });
